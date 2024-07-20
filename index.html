@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Recovery Error</title>
+    <style>
+
+@font-face {
+	font-family: 'SEGOEUIL';
+	src: local('SEGOEUIL'), url('./SEGOEUIL.woff') format('woff');
+}
+@font-face {
+	font-family: 'SEGOEUIB';
+	src: local('SEGOEUIB'), url('./SEGOEUIB.woff') format('woff');
+}
+.segoe-ui-light {
+	font-family: 'SEGOEUIL' !important;
+    font-weight: 300 !important;
+}
+
+.segoe-ui-bold {
+	font-family: 'SEGOEUIB' !important;
+    font-weight: 800 !important;
+}
+
+        body {
+            
+            font-weight: 300 !important;
+            background-color: #1E65B1;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: left;
+            max-width: 760px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #fff;
+            font-size: 3em;
+        }
+        .error-code {
+            font-size: 1.6em;
+            margin-top: 18px;
+            color: #ffffff;
+        }
+        .body-text {
+            font-size: 1.1em;
+            color: #ffffff;
+        }
+        .options {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .options a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            border: 3px solid #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex: 2;
+        }
+        .options a:hover {
+            background-color: #4CA9DD;
+            color: #ffffff;
+        }
+        .space {
+            flex: 3;
+        }
+
+        .penguin {
+            position: fixed;
+            bottom: -100vh; /* Start off-screen */
+            left: 15%;
+            transform: translateX(-50%);
+            transition: bottom 4s ease-in-out;
+            width: 30vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="segoe-ui-light">Recovery</h1>
+        <p class="error-code segoe-ui-light">It looks like Windows didn't load correctly</p>
+        <p class="segoe-ui-light body-text">If you'd like to restart and try again, choose 'Restart my PC' below. Otherwise, choose "See advanced repair options" for troubleshooting tools and advanced options. If you don't know which option is right for you, contact someone you trust to help to help with this.</p>
+        <div class="options segoe-ui-semibold">
+            <div class="space"></div>
+            <a href="#" class="segoe-ui-bold">See advanced repair options</a>
+            <a href="#" class="segoe-ui-bold">Restart my PC</a>
+        </div>
+    </div>
+
+    <img src="penguin-transparent.svg" alt="Penguin" class="penguin" id="penguin">
+
+    <script>
+        window.addEventListener('load', () => {
+            const penguin = document.getElementById('penguin');
+            penguin.style.bottom = '-15vh'; // Move the penguin up to the bottom of the screen
+        });
+    </script>
+</body>
+</html>
