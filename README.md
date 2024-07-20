@@ -2,9 +2,8 @@
 ### Blog Screen  of Death
 As a Linux fanboy I thought it would be amusing to troll the Windows cronies after the escapades of the last day or so. :-)
 
-This is an HTML, CSS and Javascript recreation of the BSOD including interactive elements (although they don't go anywhere).
-
-Five seconds after loading the Linux penguin makes a visit by popping his head up in the bottom left of the screen.
+### What is it?
+You could refer to it as petulance, but technically speakig it's an HTML page with embedded CSS and Javascript that replicates the behaviour of the now infamous BSOD from the CrowdStrike screw up. After five seconds or so the Linux penguin pokes his head up in the bottom left. It's fully interactive but the links don't go anywhere.
 
 ### Screenshot
 ![Linux Penguin Trolling](screenshot.png)
