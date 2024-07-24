@@ -12,6 +12,10 @@
   "dependencies": {
     "@astrojs/ts-plugin": "^1.9.0",
     "@directus/sdk": "^16.1.1",
-    "astro": "^4.12.2"
+    "@types/node": "^20.14.12",
+    "astro": "^4.12.2",
+    "dotenv": "^16.4.5",
+    "sharp": "^0.33.4",
+    "typescript": "^5.5.4"
   }
 }

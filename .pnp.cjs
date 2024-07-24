@@ -28,7 +28,11 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@astrojs/ts-plugin", "npm:1.9.0"],\
           ["@directus/sdk", "npm:16.1.1"],\
-          ["astro", "npm:4.12.2"]\
+          ["@types/node", "npm:20.14.12"],\
+          ["astro", "npm:4.12.2"],\
+          ["dotenv", "npm:16.4.5"],\
+          ["sharp", "npm:0.33.4"],\
+          ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=e012d7"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1284,6 +1288,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/node", [\
+      ["npm:20.14.12", {\
+        "packageLocation": "../../../../../home/simon/.yarn/berry/cache/@types-node-npm-20.14.12-c6cc526f86-10c0.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:20.14.12"],\
+          ["undici-types", "npm:5.26.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/unist", [\
       ["npm:3.0.2", {\
         "packageLocation": "../../../../../home/simon/.yarn/berry/cache/@types-unist-npm-3.0.2-3bce72a913-10c0.zip/node_modules/@types/unist/",\
@@ -1644,7 +1658,11 @@ const RAW_RUNTIME_STATE =
           ["bsod", "workspace:."],\
           ["@astrojs/ts-plugin", "npm:1.9.0"],\
           ["@directus/sdk", "npm:16.1.1"],\
-          ["astro", "npm:4.12.2"]\
+          ["@types/node", "npm:20.14.12"],\
+          ["astro", "npm:4.12.2"],\
+          ["dotenv", "npm:16.4.5"],\
+          ["sharp", "npm:0.33.4"],\
+          ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=e012d7"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -2031,6 +2049,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../../home/simon/.yarn/berry/cache/dlv-npm-1.1.3-187c903a21-10c0.zip/node_modules/dlv/",\
         "packageDependencies": [\
           ["dlv", "npm:1.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["dotenv", [\
+      ["npm:16.4.5", {\
+        "packageLocation": "../../../../../home/simon/.yarn/berry/cache/dotenv-npm-16.4.5-bcb20eb95d-10c0.zip/node_modules/dotenv/",\
+        "packageDependencies": [\
+          ["dotenv", "npm:16.4.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4838,6 +4865,24 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../../home/simon/.yarn/berry/cache/type-fest-npm-2.19.0-918b953248-10c0.zip/node_modules/type-fest/",\
         "packageDependencies": [\
           ["type-fest", "npm:2.19.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["typescript", [\
+      ["patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=e012d7", {\
+        "packageLocation": "../../../../../home/simon/.yarn/berry/cache/typescript-patch-f77cdd0b25-10c0.zip/node_modules/typescript/",\
+        "packageDependencies": [\
+          ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=e012d7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["undici-types", [\
+      ["npm:5.26.5", {\
+        "packageLocation": "../../../../../home/simon/.yarn/berry/cache/undici-types-npm-5.26.5-de4f7c7bb9-10c0.zip/node_modules/undici-types/",\
+        "packageDependencies": [\
+          ["undici-types", "npm:5.26.5"]\
         ],\
         "linkType": "HARD"\
       }]\
