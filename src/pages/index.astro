@@ -1,0 +1,202 @@
+---
+import directus from "../lib/directus";
+import { readSingleton } from "@directus/sdk";
+
+const bsod = await directus.request(readSingleton("bsod"));
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/public/favicon.png">
+<style>
+
+	@font-face {
+		font-family: 'SEGOEUIL';
+		src: local('SEGOEUIL'), url('./SEGOEUIL.woff') format('woff');
+	}
+	@font-face {
+		font-family: 'SEGOEUIB';
+		src: local('SEGOEUIB'), url('./SEGOEUIB.woff') format('woff');
+	}
+	.segoe-ui-light {
+		font-family: 'SEGOEUIL' !important;
+		font-weight: 300 !important;
+	}
+	
+	.segoe-ui-bold {
+		font-family: 'SEGOEUIB' !important;
+		font-weight: 800 !important;
+	}
+	
+			body {
+				
+				font-weight: 300 !important;
+				background-color: #1E65B1;
+				color: #ffffff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+			}
+			.container {
+				text-align: left;
+				max-width: 760px;
+				padding: 25px;
+			}
+
+			h1 {
+				color: #fff;
+				font-size: 3em;
+			}
+			.error-code {
+				font-size: 1.6em;
+				margin-top: 18px;
+				color: #ffffff;
+			}
+			.body-text {
+				font-size: 1.1em;
+				color: #ffffff;
+			}
+			.options {
+				margin-top: 20px;
+				display: flex;
+				flex-direction: row;
+				gap: 10px;
+			}
+			.options a {
+				display: block;
+				color: #ffffff;
+				text-decoration: none;
+				margin: 10px 0;
+				padding: 10px;
+				border: 3px solid #ffffff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				flex: 2;
+			}
+			.options a:hover {
+				background-color: #4CA9DD;
+				color: #ffffff;
+			}
+			.space {
+				flex: 3;
+			}
+			.penguin {
+				position: fixed;
+				bottom: -100vh;
+				left: 50%;
+				transform: translateX(-50%);
+				transition: bottom 4s ease-in-out;
+				width: 30vw;
+			}
+			@media (max-width: 768px) {
+				.container {
+					padding:15px;
+				}
+			.space {
+					flex: 0;
+					display: none;
+				}
+				.segoe-ui-light {
+		font-family: 'SEGOEUIL' !important;
+		font-weight: 300 !important;
+	}
+	
+	.segoe-ui-bold {
+		font-family: 'SEGOEUIB' !important;
+		font-weight: 800 !important;
+	}
+	
+			body {
+				
+				font-weight: 300 !important;
+				background-color: #1E65B1;
+				color: #ffffff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+			}
+			.container {
+				text-align: left;
+				max-width: 760px;
+				padding: 15px;
+			}
+
+			h1 {
+				color: #fff;
+				font-size: 3em;
+			}
+			.error-code {
+				font-size: 1.6em;
+				margin-top: 18px;
+				color: #ffffff;
+			}
+			.body-text {
+				font-size: 1.0em;
+				color: #ffffff;
+			}
+			.options {
+				margin: 20px 0;
+				display: flex;
+				flex-direction: row;
+				gap: 6px;
+				font-size: 0.9em;
+			}
+			.options a {
+				padding: 10px 5px;
+				margin: 0;
+
+			}
+			.segoe-ui-bold {
+		font-family: 'SEGOEUIB' !important;
+		font-weight: 600 !important;
+	}
+			
+				.penguin {
+					width: 50vw;
+					transform: translateX(-50%);
+				}
+				}
+
+		</style>
+
+	<title>{bsod.headline}</title>
+</head>
+  <main>
+		<div class="container">
+			<h1 class="segoe-ui-light">{ bsod.headline }</h1>
+			<p class="error-code segoe-ui-light">{ bsod.error_message }</p>
+			<p class="segoe-ui-light body-text">{ bsod.error_description }</p>
+			<div class="options segoe-ui-semibold">
+				<div class="space"></div>
+				<a href={ bsod.button1_link } class="segoe-ui-bold">{ bsod.button1 }</a>
+				<a href={ bsod.button2_link } class="segoe-ui-bold">{ bsod.button2 }</a>
+			</div>
+		</div>
+	
+		<img src="penguin-transparent.svg" alt="Penguin" class="penguin" id="penguin">
+	
+		
+				{ bsod.penguin && (
+					<script>
+						document.addEventListener('DOMContentLoaded', () => {
+							const penguin = document.getElementById('penguin');
+							if (penguin) {
+								if (window.innerWidth < 768) {
+									penguin.style.bottom = '0'; // Move the penguin to the bottom of the screen for small screens
+								} else {
+									penguin.style.bottom = '-15vh'; // Move the penguin up to the bottom of the screen for larger screens
+								}
+							}
+						});
+					</script>
+				) }
+  </main>
+</Layout>
