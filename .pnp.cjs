@@ -26,6 +26,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@astrojs/ts-plugin", "npm:1.9.0"],\
           ["@directus/sdk", "npm:16.1.1"],\
           ["astro", "npm:4.12.2"]\
         ],\
@@ -110,6 +111,21 @@ const RAW_RUNTIME_STATE =
           ["is-docker", "npm:3.0.0"],\
           ["is-wsl", "npm:3.1.0"],\
           ["which-pm-runs", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@astrojs/ts-plugin", [\
+      ["npm:1.9.0", {\
+        "packageLocation": "../../../../../home/simon/.yarn/berry/cache/@astrojs-ts-plugin-npm-1.9.0-818e3c0990-10c0.zip/node_modules/@astrojs/ts-plugin/",\
+        "packageDependencies": [\
+          ["@astrojs/ts-plugin", "npm:1.9.0"],\
+          ["@astrojs/compiler", "npm:2.9.2"],\
+          ["@jridgewell/sourcemap-codec", "npm:1.5.0"],\
+          ["@volar/language-core", "npm:2.4.0-alpha.18"],\
+          ["@volar/typescript", "npm:2.4.0-alpha.18"],\
+          ["semver", "npm:7.6.3"],\
+          ["vscode-languageserver-textdocument", "npm:1.0.11"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1286,6 +1302,37 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@volar/language-core", [\
+      ["npm:2.4.0-alpha.18", {\
+        "packageLocation": "../../../../../home/simon/.yarn/berry/cache/@volar-language-core-npm-2.4.0-alpha.18-8d6ec677db-10c0.zip/node_modules/@volar/language-core/",\
+        "packageDependencies": [\
+          ["@volar/language-core", "npm:2.4.0-alpha.18"],\
+          ["@volar/source-map", "npm:2.4.0-alpha.18"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@volar/source-map", [\
+      ["npm:2.4.0-alpha.18", {\
+        "packageLocation": "../../../../../home/simon/.yarn/berry/cache/@volar-source-map-npm-2.4.0-alpha.18-fd4e194b34-10c0.zip/node_modules/@volar/source-map/",\
+        "packageDependencies": [\
+          ["@volar/source-map", "npm:2.4.0-alpha.18"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@volar/typescript", [\
+      ["npm:2.4.0-alpha.18", {\
+        "packageLocation": "../../../../../home/simon/.yarn/berry/cache/@volar-typescript-npm-2.4.0-alpha.18-7c0102a029-10c0.zip/node_modules/@volar/typescript/",\
+        "packageDependencies": [\
+          ["@volar/typescript", "npm:2.4.0-alpha.18"],\
+          ["@volar/language-core", "npm:2.4.0-alpha.18"],\
+          ["path-browserify", "npm:1.0.1"],\
+          ["vscode-uri", "npm:3.0.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["abbrev", [\
       ["npm:2.0.0", {\
         "packageLocation": "../../../../../home/simon/.yarn/berry/cache/abbrev-npm-2.0.0-0eb38a17e5-10c0.zip/node_modules/abbrev/",\
@@ -1595,6 +1642,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["bsod", "workspace:."],\
+          ["@astrojs/ts-plugin", "npm:1.9.0"],\
           ["@directus/sdk", "npm:16.1.1"],\
           ["astro", "npm:4.12.2"]\
         ],\
@@ -3973,6 +4021,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["path-browserify", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../../home/simon/.yarn/berry/cache/path-browserify-npm-1.0.1-f975d99a99-10c0.zip/node_modules/path-browserify/",\
+        "packageDependencies": [\
+          ["path-browserify", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["path-exists", [\
       ["npm:4.0.0", {\
         "packageLocation": "../../../../../home/simon/.yarn/berry/cache/path-exists-npm-4.0.0-e9e4f63eb0-10c0.zip/node_modules/path-exists/",\
@@ -5041,6 +5098,24 @@ const RAW_RUNTIME_STATE =
         "packagePeers": [\
           "@types/vite",\
           "vite"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["vscode-languageserver-textdocument", [\
+      ["npm:1.0.11", {\
+        "packageLocation": "../../../../../home/simon/.yarn/berry/cache/vscode-languageserver-textdocument-npm-1.0.11-6fc94d2b7b-10c0.zip/node_modules/vscode-languageserver-textdocument/",\
+        "packageDependencies": [\
+          ["vscode-languageserver-textdocument", "npm:1.0.11"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["vscode-uri", [\
+      ["npm:3.0.8", {\
+        "packageLocation": "../../../../../home/simon/.yarn/berry/cache/vscode-uri-npm-3.0.8-56f46b9d24-10c0.zip/node_modules/vscode-uri/",\
+        "packageDependencies": [\
+          ["vscode-uri", "npm:3.0.8"]\
         ],\
         "linkType": "HARD"\
       }]\

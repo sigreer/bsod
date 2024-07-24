@@ -1,9 +1,15 @@
 # BSOD
-### Blog Screen  of Death
-As a Linux fanboy I thought it would be amusing to troll the Windows cronies after the escapades of the last day or so. :-)
 
-### What is it?
-You could refer to it as petulance, but technically speakig it's an HTML page with embedded CSS and Javascript that replicates the behaviour of the now infamous BSOD from the CrowdStrike screw up. After five seconds or so the Linux penguin pokes his head up in the bottom left. It's fully interactive but the links don't go anywhere.
+## Blue Screen of Directus
 
-### Screenshot
-![Linux Penguin Trolling](screenshot.png)
+A replica of the now (if it wasn't already) infamous BSOD of Microsoft Windows courtesy of CrowdStrike. Additional trolling from the Linux penguin included for mild amusement.
+
+## What is it?
+
+Astro powered by Directus as a backend with added Penguin. Github Actions generates the static content and deploys to Github Pages each time a commit is pushed to the repo.
+
+Astro's flexibility means it's easy to integrate with frameworks like React, Vue, and Svelte, providing endless resources for almost infinite trolling. I'll maybe build it out into a full website if I can find some inspiration from the next global IT meltdown. Fingers crossed it's nothing to do with Linux! :-)
+
+## Screenshot
+
+![Linux Penguin Trolling](/public/screenshot.png)
